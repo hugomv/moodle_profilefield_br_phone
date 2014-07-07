@@ -24,5 +24,6 @@
  */
 
 $string['pluginname'] = 'Brazilian CPF';
+$string['cpf_digits'] = 'CPF must have only numeric digits';
 $string['cpf_size'] = 'CPF must have 11 digits';
 $string['cpf_invalid'] = 'Invalid CPF';

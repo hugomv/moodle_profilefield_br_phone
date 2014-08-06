@@ -21,11 +21,16 @@ class profile_field_cpf extends profile_field_base {
     }
 
     function edit_validate_field($usernew) {
+        // Get default validation errors
+        $errors = parent::edit_validate_field($usernew);
+        if ($errors) {
+            return $errors;
+        }
+
         // Based on script by Moacir, in http://codigofonte.uol.com.br/codigos/validacao-de-cpf-com-php
-        $errors = array();
         if (isset($usernew->{$this->inputname})) {
             $cpf = $usernew->{$this->inputname};
-            if (ctype_digit($cpf)) {
+            if (!ctype_digit($cpf)) {
                 return array($this->inputname => get_string('cpf_digits', 'profilefield_cpf'));
             }
             if (strlen($cpf) != 11) {

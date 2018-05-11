@@ -16,14 +16,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_text', language 'en', branch 'MOODLE_20_STABLE'
+ * Strings for component 'cpf_text', language 'pt_br'
  *
- * @package   profilefield_text
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @package   cpf_text
+ * @copyright 2014 onwards Willian Mano  {@link http://willianmano.net}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'CPF brasileiro';
-$string['cpf_digits'] = 'O CPF deve ser formado apenas por dígitos numéricos';
-$string['cpf_size'] = 'O CPF deve ter exatos 11 dígitos';
-$string['cpf_invalid'] = 'CPF inválido';
+$string['pluginname'] = 'Campo de CPF';
+$string['invalidcpf'] = 'CPF inválido';
+$string['cpfexists'] = 'CPF já existe';
+$string['onlydigits'] = 'Informe apenas dígitos';
+$string['required'] = 'É obrigatório informar o CPF';

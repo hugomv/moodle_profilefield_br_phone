@@ -15,14 +15,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package    profilefield
- * @subpackage text
- * @copyright  2007 onwards Shane Elliot {@link http://pukunui.com}
+ * @package    cpf
+ * @copyright  2014 onwards Willian Mano {@link http://willianmano.net}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2013050100;        // The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2013050100;        // Requires this Moodle version
-$plugin->component = 'profilefield_cpf'; // Full name of the plugin (used for diagnostics)
+$plugin->version   = 2017051702;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires  = 2012062500;        // Requires this Moodle version.
+$plugin->maturity = MATURITY_STABLE;
+$plugin->release  = 'Version for Moodle 2.2 onwards';
+$plugin->component = 'profilefield_cpf';        // Full name of the plugin (used for diagnostics).

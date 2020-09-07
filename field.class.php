@@ -33,21 +33,21 @@ class profile_field_br_cellphone extends profile_field_base {
             if (!ctype_digit($br_cellphone)) {
                 return array($this->inputname => get_string('br_cellphone_digits', 'profilefield_br_cellphone'));
             }
-            if (strlen($cpf) != 11) {
+            if (strlen($br_cellphone) != 11) {
                 return array($this->inputname => get_string('br_cellphone_size', 'profilefield_br_cellphone'));
             }
-            // if (in_array($cpf, array('00000000000', '11111111111', '22222222222', '33333333333', '44444444444', '55555555555', '66666666666', '77777777777', '88888888888', '99999999999'))) {
-            //     return array($this->inputname => get_string('cpf_invalid', 'profilefield_cpf'));
+            // if (in_array($br_cellphone, array('00000000000', '11111111111', '22222222222', '33333333333', '44444444444', '55555555555', '66666666666', '77777777777', '88888888888', '99999999999'))) {
+            //     return array($this->inputname => get_string('br_cellphone_invalid', 'profilefield_br_cellphone'));
             // }
             // for ($t = 9; $t < 11; $t++) {
             //     for ($d = 0, $c = 0; $c < $t; $c++) {
-            //         $v = substr($cpf,$c,1);
+            //         $v = substr($br_cellphone,$c,1);
             //         $d += $v * (($t + 1) - $c);
             //     }
-            //     $v = substr($cpf,$c,1);
+            //     $v = substr($br_cellphone,$c,1);
             //     $d = ((10 * $d) % 11) % 10;
             //     if ($v != $d) {
-            //         return array($this->inputname => get_string('cpf_invalid', 'profilefield_cpf'));
+            //         return array($this->inputname => get_string('br_cellphone_invalid', 'profilefield_br_cellphone'));
             //     }
             // }
         }

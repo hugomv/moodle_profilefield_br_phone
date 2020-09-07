@@ -1,6 +1,6 @@
 <?php
 
-class profile_define_cpf extends profile_define_base {
+class profile_define_br_cellphone extends profile_define_base {
 
     function define_form_specific($form) {
         /// Default data

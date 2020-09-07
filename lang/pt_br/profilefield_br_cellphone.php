@@ -23,7 +23,7 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Brazilian CPF';
-$string['cpf_digits'] = 'CPF must have only numeric digits';
-$string['cpf_size'] = 'CPF must have 11 digits';
-$string['cpf_invalid'] = 'Invalid CPF';
+$string['pluginname'] = 'Número de celular brasileiro';
+$string['br_cellphone_digits'] = 'O número de celular deve ser formado apenas por dígitos numéricos';
+$string['br_cellphone_size'] = 'O número de celular deve ter exatos 11 dígitos, incluindo o DDD, no formato (XX)XXXXX-XXXX';
+$string['br_cellphone_invalid'] = 'Celular inválido';
